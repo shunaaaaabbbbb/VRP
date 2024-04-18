@@ -15,8 +15,6 @@ def page_main():
     g_button = False
     r_button = False
     global a
-    global b
-    global c
     global Pos1
     col1,col2 = st.columns(2)
     with col1:
@@ -25,17 +23,8 @@ def page_main():
       
         if st.button("グラフを表示して最適ルートを計算"):
             g_button = True
-            if g_button:
-                b = 0
-                if b == 0:
-                    c = b
-                    b += 1
-            if c == 0:
-                r_button = True
+            r_button = True
 
-        
-        #if r_but:
-         #   r_button = True
             
 
     with col2:
@@ -62,7 +51,3 @@ def page_main():
     st.write("※各車両の走行距離が設定された走行距離の上限を超えないような配送ルートを考えます。")
     st.write("※各車両がデポ（ピンクの点）から出発して各頂点を回ってまたデポに戻ってくるようなルートを考えます。")
     st.write("※全ての頂点を丁度1度通るような配送ルートのうち、車両の走行距離の合計が最小となるような配送ルートを求めます。")       
-
-    
-
-
