@@ -37,7 +37,7 @@ def page_main():
         if r_button:
             edges = solver(V,Pos1,T,car,lim)
             if edges == "error":
-                st.subheader("問題が解けないので入力値を変えてください。")
+                st.subheader("最適解が得られませんでした。入力値を変えてください。")
             else:
                 plot_result(Pos1,edges)
 
