@@ -1,7 +1,7 @@
 import streamlit as st
 import random
 
-## テストテスト
+## テストテストテスト
 
 def input_node():
     num =  st.slider("頂点数を入力(デポを除く)", min_value=2, max_value=10, key = "node")
